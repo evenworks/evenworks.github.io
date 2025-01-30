@@ -11,6 +11,7 @@
 	import SquareTerminal from "lucide-svelte/icons/square-terminal";
 	import CalendarDays from "lucide-svelte/icons/calendar-days";
 	import ListTodo from  "lucide-svelte/icons/list-todo";
+	import { base } from '$app/paths';
 
 	// This is sample data.
 	const data = {
@@ -32,27 +33,27 @@
 		navMain: [
 			{
 				title: "Calendar",
-				url: "/dashboard",
+				url: base + "/dashboard",
 				icon: CalendarDays,
 				items: [
 					{
 						title: "Duo View",
-						url: "/dashboard/duo",
+						url: base + "/dashboard/duo",
 					},
 					{
 						title: "Build Your Own Schedule",
-						url: "/dashboard/byos",
+						url: base + "/dashboard/byos",
 					},
 				],
 			},
 			{
 				title: "Tasklist",
-				url: "/dashboard/tasklist",
+				url: base + "/dashboard/tasklist",
 				icon: ListTodo,
 			},
 			{
 				title: "Settings",
-				url: "/dashboard",
+				url: base + "/dashboard",
 				icon: Settings2,
 				items: [
 					{

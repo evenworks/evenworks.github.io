@@ -2,6 +2,7 @@
 	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
 	import * as Breadcrumb from "$lib/components/ui/breadcrumb/index.js";
 	import { Separator } from "$lib/components/ui/separator/index.js";
+	import { base } from '$app/paths';
 </script>
 
 <header
@@ -13,7 +14,7 @@ class="flex h-16 shrink-0 items-center gap-2 transition-[width,height] ease-line
 	<Breadcrumb.Root>
 		<Breadcrumb.List>
 			<Breadcrumb.Item class="hidden md:block">
-				<Breadcrumb.Link href="/dashboard">Dashboard</Breadcrumb.Link>
+				<Breadcrumb.Link href="{base}/dashboard">Dashboard</Breadcrumb.Link>
 			</Breadcrumb.Item>
 			<Breadcrumb.Separator class="hidden md:block" />
 			<Breadcrumb.Item class="hidden md:block">
